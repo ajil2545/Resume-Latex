@@ -1,0 +1,235 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+
+%----------FoNT oPTIoNS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    {\Huge \scshape Ajil K} \\ \vspace{1pt}
+    Bengaluru, Karnataka \\ \vspace{1pt}
+    \small \raisebox{-0.1\height}\faPhone\ +91 8606713330 ~ \href{mailto:ajilkunjunmon2000@gmail.com}{\raisebox{-0.2\height}\faEnvelope\  \underline{ajilkunjunmon2000@gmail.com}} ~ 
+    \href{https://www.linkedin.com/in/ajil-k-871a64187/}{\raisebox{-0.2\height}\faLinkedin\ \underline{https://www.linkedin.com/in/ajil-k-871a64187/}}  ~
+    \href{https://github.com/ajil2545}{\raisebox{-0.2\height}\faGithub\ 
+    \underline{https://github.com/ajil2545}}
+    \vspace{-8pt}
+\end{center}
+
+
+%-----------EDUCATIoN-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Thangal Kunju Musaliar College of Engineering}{June. 2021 -- Jan 2023}
+      {Master of Computer Application}{Kollam, Kerala}
+  \resumeSubHeadingListEnd
+
+%------RELEVANT CoURSEWoRK-------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Programming Languages}{: Python} \\
+     \textbf{Databases}{: MongoDB, MSSQL, PostgreSQL, RedisDB, Valkey} \\
+     \textbf{FrameWorks}{: FastAPI, Django, Flask } \\
+     \textbf{Messaging System}{: MQTT, Kafka} \\
+     \textbf{Data Engineering}{: Databricks, Spark (PySpark, Spark SQL), Delta Lake, ETL/ELT processes}\\
+      \textbf{Containerization and Orchestration}{: Docker, Kubernetes}\\
+     \textbf{Cloud}{: Azure} \\
+    
+    }}
+ \end{itemize}
+ \vspace{-16pt}
+
+
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Rockwell Automation}{June 2023  -- Present}
+      {Software Engineer }{Bangalore,India}
+      \resumeItemListStart
+        \resumeItem{Excellent coding skills and able to convert design into code fluently.}
+        \resumeItem{Engineered and executed RESTful APIs, enabling smooth communication between the frontend and backend of web applications; streamlined processes and reduced latency by 50\%, resulting in improved performance and increased customer satisfaction.}
+        \resumeItem{Explored ways to visualize and send a daily report of test results to team members  using HTML  and CSS.}
+        \resumeItem{Sound SDLC and practices and tooling experience - version control, CI/CD and configuration management tools.}
+         \resumeItem{Proficiently managed MongoDB and PostgreSQL databases, designing schemas, optimizing queries, and ensuring data integrity for high-traffic applications. Achieved a 60\% improvement in database performance through strategic optimizations.}
+
+\resumeItem{More than 500 sites have deployed my data acquisition module to fetch data from analyzers 
+and PLCs using the Modbus messaging protocol.}
+\resumeItem{Led the automation of data pipelines and workflows using CI/CD practices.}
+        
+      \resumeItemListEnd
+    \resumeSubheading
+      {Rockwell Automation}{Jan 2023 -- June 2023}
+      {Software Engineer Intern}{Bangalore,India}
+      \resumeItemListStart
+        \resumeItem{Created daily reports fOr central government authorities, incOrporating
+suggestiOns from CPCB Chairman, achieving a 92 \% satisfactiOn rate in report
+quality.}
+        \resumeItem{Improved API response time by 25\%, resulting in a notable enhancement of user 
+experience and increased customer satisfaction.}
+\resumeItem{Strong hands-on and practical working experience with Python.}
+    \resumeItemListEnd
+    
+  \resumeSubHeadingListEnd
+\vspace{-16pt}
+
+%-----------PRoJECTS-----------
+\section{Projects}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{GLens Client Data Acquisition Software} $|$ \emph{Python,MySQL,FastAPI, Azure}}{}
+          \resumeItemListStart
+            \resumeItem{Glens is a real-time data acquisition ,monitoring,and analytics suite of products for industrial emissions,effluent discharges,and ambient air monitoring.Glens DAS software,Glens Server platform,Glens Environ Data Logger provide a comprehensive solution for all industry environmental needs.}
+            
+            
+          \resumeItemListEnd
+          \vspace{-13pt}
+      \resumeProjectHeading
+          {\textbf{Resumerader Pro} $|$ \emph{Python, Gemini API,Streamlit}}{}
+          \resumeItemListStart
+          
+            \resumeItem{Developed and executed a project utilizing GOOgle’s generative AI, GEMINI, tO address the challenges Of crafting jOb applicatiOns. The outcOme is an innovative applicatiOn that not Only offers cOnstructive feedback but alsO identifies and emphasizes keywOrds missing in resumes, ultimately enhancing the overall jOb applicatiOn experience.}
+          \resumeItemListEnd 
+           
+          \vspace{-13pt}
+          
+%-------certifications----------------%
+
+\section{Certifications}
+    \vspace{-5pt}
+          \resumeItemListStart      
+            \resumeItem{NPTEL Online Certification (IIT Kharagpur): Problem Solving Through Programming In C}
+            \resumeItem{NPTEL Online Certification (IIT Madras): Introduction to Database Systems}
+          \resumeItemListEnd 
+          \vspace{-13pt}
+
+
+%-----------INVoLVEMENT---------------
+\section{Awards}
+            \resumeItemListStart
+                \resumeItem{Star of the Month - Best Team Player $|$ \emph{May  2024}}
+                \resumeItem{Star of the Month - Going Above And Beyond $|$ \emph{August  2023}}
+            \resumeItemListEnd
+\end{document}
