@@ -1,6 +1,6 @@
 %-------------------------
 % Resume in Latex
-% Author : Jake Gutierrez
+% Author : AJIL K
 % Based off of: https://github.com/sb2nov/resume
 % License : MIT
 %------------------------
@@ -18,6 +18,7 @@
 \usepackage{fancyhdr}
 \usepackage[english]{babel}
 \usepackage{tabularx}
+\usepackage{microtype}  % improves justification quality
 \usepackage{fontawesome5}
 \usepackage{multicol}
 \setlength{\multicolsep}{-3.0pt}
@@ -117,44 +118,50 @@
 \begin{document}
 
 %----------HEADING----------
+
 % \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
-%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+%   \textbf{\href{http://ajilkunjumon.com/}{\Large Ajil K}} & Email : \href{mailto:ajilkunjumon2000@gmail.com}{ajilkunjumon2000@gmail.com}\\
+%   \href{http://ajilkunjumon.com/}{http://ajilkunjumon.com} & Mobile : +91-8606713330 \\
 % \end{tabular*}
 
 \begin{center}
     {\Huge \scshape Ajil K} \\ \vspace{1pt}
     Bengaluru, Karnataka \\ \vspace{1pt}
     \small \raisebox{-0.1\height}\faPhone\ +91 8606713330 ~ \href{mailto:ajilkunjunmon2000@gmail.com}{\raisebox{-0.2\height}\faEnvelope\  \underline{ajilkunjunmon2000@gmail.com}} ~ 
-    \href{https://www.linkedin.com/in/ajil-k-871a64187/}{\raisebox{-0.2\height}\faLinkedin\ \underline{https://www.linkedin.com/in/ajil-k-871a64187/}}  ~
-    \href{https://github.com/ajil2545}{\raisebox{-0.2\height}\faGithub\ 
-    \underline{https://github.com/ajil2545}}
+    \href{https://www.linkedin.com/in/ajil-k-871a64187/}{\raisebox{-0.2\height}\faLinkedin\ \underline{Linkedin}} 
     \vspace{-8pt}
 \end{center}
 
-
-%-----------EDUCATIoN-----------
-\section{Education}
-  \resumeSubHeadingListStart
-    \resumeSubheading
-      {Thangal Kunju Musaliar College of Engineering}{June. 2021 -- Jan 2023}
-      {Master of Computer Application}{Kollam, Kerala}
-  \resumeSubHeadingListEnd
-
+%-----------SUMMARY-----------
+\section{Summary}
+  % \resumeSubHeadingListStart
+  \small{
+    Results-driven Python Backend Engineer with 3+ years of experience designing and developing scalable microservices and RESTful APIs in the IIoT (Industry 5.0) domain. Proficient in high-speed data acquisition and real-time data processing using industrial communication protocols such as Modbus, OPC DA, and OPC UA. Proven track record of delivering robust backend solutions in high-volume production environments with expertise in cloud platforms (AWS, Azure), messaging systems (MQTT, Kafka), and containerization (Docker, Kubernetes).}
+  % \resumeSubHeadingListEnd
+  
 %------RELEVANT CoURSEWoRK-------
 \section{Technical Skills}
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
      \textbf{Programming Languages}{: Python} \\
-     \textbf{Databases}{: MongoDB, MSSQL, PostgreSQL, RedisDB, Valkey} \\
-     \textbf{FrameWorks}{: FastAPI, Django, Flask } \\
-     \textbf{Messaging System}{: MQTT, Kafka} \\
-     \textbf{Data Engineering}{: Databricks, Spark (PySpark, Spark SQL), Delta Lake, ETL/ELT processes}\\
-      \textbf{Containerization and Orchestration}{: Docker, Kubernetes}\\
-     \textbf{Cloud}{: Azure} \\
+     \textbf{Frameworks}{: FastAPI, Flask, Django} \\
+     \textbf{Databases}{: MongoDB, MSSQL, PostgreSQL, Redis, Valkey, InfluxDB} \\
+
+     
+     \textbf{Cloud \& IoT Services}{: AWS S3, AWS IoT Core, Azure Blob Storage, Azure IoT Hub} \\
+     
+     \textbf{Industrial Protocols}{: Modbus, OPC DA, OPC UA} \\
+     \textbf{Messaging \& Streaming}{: MQTT, Apache Kafka} \\
+     \textbf{Containerization \& Orchestration}{: Docker, Kubernetes} \\
+     
+     \textbf{Version Control \& Collaboration}{: Git, GitHub, GitLab} \\
+
+    \textbf{Testing \& API Tools}{: pytest, Selenium, Postman, Swagger/OpenAPI} \\
     
+    \textbf{CI/CD}{: GitHub Actions} \\
+     \textbf{Operating Systems}{: Windows, Ubuntu, RHEL, CentOS, Raspberry Pi OS}
     }}
- \end{itemize}
+  \end{itemize}
  \vspace{-16pt}
 
 
@@ -165,9 +172,12 @@
   \resumeSubHeadingListStart
 
     \resumeSubheading
-      {Rockwell Automation}{June 2023  -- Present}
-      {Software Engineer }{Bangalore,India}
+    {Rockwell Automation}{June 2023 -- Present}
+      {Associate Software Engineer}{Bangalore,India}
       \resumeItemListStart
+        \resumeItem{Created daily reports fOr central government authorities, incOrporating
+suggestiOns from CPCB Chairman, achieving a 92 \% satisfactiOn rate in report
+quality.}
         \resumeItem{Excellent coding skills and able to convert design into code fluently.}
         \resumeItem{Engineered and executed RESTful APIs, enabling smooth communication between the frontend and backend of web applications; streamlined processes and reduced latency by 50\%, resulting in improved performance and increased customer satisfaction.}
         \resumeItem{Explored ways to visualize and send a daily report of test results to team members  using HTML  and CSS.}
@@ -179,43 +189,28 @@ and PLCs using the Modbus messaging protocol.}
 \resumeItem{Led the automation of data pipelines and workflows using CI/CD practices.}
         
       \resumeItemListEnd
-    \resumeSubheading
-      {Rockwell Automation}{Jan 2023 -- June 2023}
-      {Software Engineer Intern}{Bangalore,India}
-      \resumeItemListStart
-        \resumeItem{Created daily reports fOr central government authorities, incOrporating
-suggestiOns from CPCB Chairman, achieving a 92 \% satisfactiOn rate in report
-quality.}
-        \resumeItem{Improved API response time by 25\%, resulting in a notable enhancement of user 
-experience and increased customer satisfaction.}
-\resumeItem{Strong hands-on and practical working experience with Python.}
-    \resumeItemListEnd
+  \resumeSubheading
+  {KnowledgeLens: A Rockwell Automation Company}{Jan 2023 -- June 2023}
+  {Software Engineer Intern}{Bangalore, India}
+  \resumeItemListStart
+    \resumeItem{Revamped IoT Asset Manager portal by implementing pagination and lazy 
+    loading, reducing page load time by \textbf{80\%} and improving monitoring 
+    efficiency for IoT devices across client sites.}
+    \resumeItem{Developed a unified backend engine to ingest and index device telemetry, 
+    heartbeat, and metadata from edge machines into \textbf{MongoDB}, significantly 
+    improving data retrieval speed for the IoT Manager portal.}
+  \resumeItemListEnd
     
   \resumeSubHeadingListEnd
 \vspace{-16pt}
 
-%-----------PRoJECTS-----------
-\section{Projects}
-    \vspace{-5pt}
-    \resumeSubHeadingListStart
-      \resumeProjectHeading
-          {\textbf{GLens Client Data Acquisition Software} $|$ \emph{Python,MySQL,FastAPI, Azure}}{}
-          \resumeItemListStart
-            \resumeItem{Glens is a real-time data acquisition ,monitoring,and analytics suite of products for industrial emissions,effluent discharges,and ambient air monitoring.Glens DAS software,Glens Server platform,Glens Environ Data Logger provide a comprehensive solution for all industry environmental needs.}
-            
-            
-          \resumeItemListEnd
-          \vspace{-13pt}
-      \resumeProjectHeading
-          {\textbf{Resumerader Pro} $|$ \emph{Python, Gemini API,Streamlit}}{}
-          \resumeItemListStart
-          
-            \resumeItem{Developed and executed a project utilizing GOOgle’s generative AI, GEMINI, tO address the challenges Of crafting jOb applicatiOns. The outcOme is an innovative applicatiOn that not Only offers cOnstructive feedback but alsO identifies and emphasizes keywOrds missing in resumes, ultimately enhancing the overall jOb applicatiOn experience.}
-          \resumeItemListEnd 
-           
-          \vspace{-13pt}
-          
-%-------certifications----------------%
+%-----------EDUCATIoN-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Thangal Kunju Musaliar College of Engineering}{June. 2021 -- Jan 2023}
+      {Master of Computer Application (From APJ Abdul Kalam Technological University)}{Kollam, Kerala}
+  \resumeSubHeadingListEnd
 
 \section{Certifications}
     \vspace{-5pt}
@@ -223,7 +218,7 @@ experience and increased customer satisfaction.}
             \resumeItem{NPTEL Online Certification (IIT Kharagpur): Problem Solving Through Programming In C}
             \resumeItem{NPTEL Online Certification (IIT Madras): Introduction to Database Systems}
           \resumeItemListEnd 
-          \vspace{-13pt}
+          \vspace{-16pt}
 
 
 %-----------INVoLVEMENT---------------
